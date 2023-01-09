@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="885b4c2b88454f829365eebc07778e24" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Admin" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Category" Width="1.5" PointX="12" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Chat" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Post" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Product" Width="1.5" PointX="9.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Review" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Admins_AdminId_AdminId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Categories_dbo_Products_ProductId_Pid" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Chats_dbo_Users_SenderId_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Posts_dbo_Users_UserId_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_PostId_PostId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_Price_PostId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_ProductId_PostId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_ReviewedUserId_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_ReviewerId_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Users_dbo_Reviews_Rating_ReviewId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Contact" Width="1.5" PointX="5.375" PointY="8.75" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Admins_Admin_AdminId" />
+        <AssociationConnector Association="Model.FK_dbo_Categories_dbo_Products_Product_Pid" />
+        <AssociationConnector Association="Model.FK_dbo_Chats_dbo_Users_User_UserId" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_Post_PostId" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_Post1_PostId" />
+        <AssociationConnector Association="Model.FK_dbo_Products_dbo_Posts_Post2_PostId" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_User_UserId" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_User_UserId1" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_User_UserId2" />
+        <AssociationConnector Association="Model.FK_dbo_Reviews_dbo_Users_User1_UserId" />
+        <AssociationConnector Association="Model.FK_dbo_Users_dbo_Reviews_Review_ReviewId" />
+        <AssociationConnector Association="Model.FK_dbo_Users_dbo_Reviews_Review_ReviewId1" />
+        <EntityTypeShape EntityType="Model.File" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.LogIn" Width="1.5" PointX="7.375" PointY="9.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
